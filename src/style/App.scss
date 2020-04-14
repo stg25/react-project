@@ -1,7 +1,6 @@
 @import 'variables.scss';
 
 // General style
-
 .title {
     padding: 20px 0;
     margin-bottom: 20px;
@@ -10,7 +9,6 @@
 }
 
 // Voting app style
-
 .voting_app {
 
     .items {
@@ -66,6 +64,19 @@
                     }
                 }
             }
+        }
+    }
+}
+
+// Voting app style
+.timeTracking_app {
+
+    .dashboard {
+        width: 50%;
+        @include dFlexColumnCentCent;
+
+        #timers {
+            width: 100%;
         }
     }
 }

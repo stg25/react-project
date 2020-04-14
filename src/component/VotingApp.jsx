@@ -1,23 +1,18 @@
 import React from 'react';
-import products from '../utils/seed.js'
+import products from '../utils/votingAppSeed.js'
 
 class ProductList extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.state = { 
-            products: [],
-        };
-        
-        this.handleProductUpVote = this.handleProductUpVote.bind(this)
-    }
+    
+    state = { 
+        products: [],
+    };
 
     componentDidMount() {
         this.setState({ products: products });
     }
 
     // Function passed down as props
-    handleProductUpVote(productId) {
+    handleProductUpVote = (productId) => {
         const nextProducts = this.state.products.map((product) => {
             if (product.id === productId) {
                 // Object.assign create a new object {} with product properties
@@ -34,7 +29,6 @@ class ProductList extends React.Component {
     }
 
     render() {
-
         return (
             <div className="items">
                 {this.state.products.sort((a, b) => b.votes - a.votes).map(product => (
@@ -56,13 +50,8 @@ class ProductList extends React.Component {
 }
 
 class Product extends React.Component {
-    constructor(props) {
-        super(props);
 
-        this.handleUpVote = this.handleUpVote.bind(this);
-    }
-
-    handleUpVote() {
+    handleUpVote = () => {
         this.props.onVote(this.props.id)
     }
 
