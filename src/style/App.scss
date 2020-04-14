@@ -13,51 +13,57 @@
 
 .voting_app {
 
-    .item {
+    .items {
         width: 100%;
-        @include dFlexCentCent;
+        @include dFlexColumnCentCent;
 
-        .image {
-            width: 10%;
-
-            img {
-                width: 100%;
-            }
-        }
-
-        .votes {
-            margin: 20px;
-
-            a {
-                margin-right: 10px;
-            }
-        }
-
-        .middle {
-            margin-left: 20px;
-
-            .description {
-
-                h4 {
-                    color: blue;
-                }
-
-                p {
-                    margin: 10px 0;
-                }
-            }
-
-            .extra {
-                @include dFlexStartCent;
-
-                span {
-                    color: gray;
-                }
-
+        .item {
+            width: 90%;
+            @include dFlexStartCent;
+    
+            .image {
+                width: 15%;
+    
                 img {
-                    width: 30px;
-                    border-radius: 50%;
-                    margin-left: 10px;
+                    width: 100%;
+                }
+            }
+    
+            .votes {
+                margin: 20px;
+    
+                p {
+                    margin-right: 10px;
+                    display: inline;
+                }
+            }
+    
+            .middle {
+                margin-left: 20px;
+    
+                .description {
+    
+                    h4 {
+                        color: blue;
+                    }
+    
+                    p {
+                        margin: 10px 0;
+                    }
+                }
+    
+                .extra {
+                    @include dFlexStartCent;
+    
+                    span {
+                        color: gray;
+                    }
+    
+                    img {
+                        width: 30px;
+                        border-radius: 50%;
+                        margin-left: 10px;
+                    }
                 }
             }
         }
