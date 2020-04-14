@@ -1,0 +1,70 @@
+.title {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+  text-align: center;
+}
+
+.voting_app .item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.voting_app .item .image {
+  width: 10%;
+}
+
+.voting_app .item .image img {
+  width: 100%;
+}
+
+.voting_app .item .votes {
+  margin: 20px;
+}
+
+.voting_app .item .votes a {
+  margin-right: 10px;
+}
+
+.voting_app .item .middle {
+  margin-left: 20px;
+}
+
+.voting_app .item .middle .description h4 {
+  color: blue;
+}
+
+.voting_app .item .middle .description p {
+  margin: 10px 0;
+}
+
+.voting_app .item .middle .extra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.voting_app .item .middle .extra span {
+  color: gray;
+}
+
+.voting_app .item .middle .extra img {
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=App.css.map */

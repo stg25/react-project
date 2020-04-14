@@ -1,0 +1,36 @@
+
+@mixin dFlexCentCent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin dFlexCentStart {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@mixin dFlexCentEnd {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@mixin dFlexStartCent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin dFlexStartStart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin dFlexStartEnd {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
